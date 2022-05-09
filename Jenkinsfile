@@ -24,7 +24,7 @@ pipeline {
             // Run the sonar scan
             steps {
                 echo "######################## Sonar Scan"
-                bat 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=37b856ddeb9ca706e0392f51b051b0021aaf2531'
+                bat 'mvn verify sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=37b856ddeb9ca706e0392f51b051b0021aaf2531'
             }
         }
         stage('Package Archieve') {
