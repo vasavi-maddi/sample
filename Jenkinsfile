@@ -8,12 +8,6 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Git Clone') { 
-            steps {
-                echo "######################## Cloning" 
-                git branch: 'main', url: 'https://github.com/gangadharparde/springboot-jpa-rest-api-endtoend.git'
-            }
-        }
         stage('Clean') {
            steps{
                echo "######################## Cleaning the project"
