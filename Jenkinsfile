@@ -5,7 +5,7 @@ pipeline {
     }
     tools { 
       maven 'vasavi_maven'
-      jdk 'vasavi_JDK' 
+      jdk 'vasavi_JDK11' 
     }
     stages {
         stage('Clean') {
